@@ -12,31 +12,47 @@
       <meta property="og:type" content="article"/>
       <meta property="og:title" content="Loyae: AI For Automated SEO"/>
       <meta property="og:description" content="The SEO Revolution | Long Gone Are The Days of Manual Site Optimization"/>
-      <meta property="og:image" content=""/>
-      <meta property="og:image:alt" content=""/>
-      <meta property="og:url" content=""/>
+      <meta property="og:image" content="assets/og.png"/>
+      <meta property="og:image:alt" content="homepage of Loyae"/>
       <meta property="og:site_name" content="Loyae"/>
 
       <meta property="article:published_time" content="2023-04-02 10:00"/>
       <meta property="article:author" content="John Lins"/>
       <meta property="article:publisher" content="Loyae"/>
 
-      <meta name='twitter:title' content=""/> 
-      <meta name='twitter:description' content=""/> 
-      <meta name='twitter:image' content=""/> 
-      <meta name='twitter:card' content=""/>
-      <meta name='twitter:image:alt' content=""/>
+      <meta name='twitter:title' content="Loyae: AI For Automated SEO"/> 
+      <meta name='twitter:description' content="The SEO Revolution | Long Gone Are The Days of Manual Site Optimization"/> 
+      <meta name='twitter:image:alt' content="homepage of Loyae"/>
 </head>
 
 <body>
 
+<header>
+<nav>
+	   
+    <a href="https://loyae.com" style="text-decoration: none; color: black">
+      <div class="logo">
+         <img src="../../logo.png" alt="logo" height="30px" width="30px" style="margin: 3px;"/>
+       Loyae
+      </div>
+    </a>
+
+</nav>
+</header>
+
+
+
+<main>
 <center>
-<h1>Loyae: AI For Automated SEO</h1>
-<h2>The SEO Revolution | Long Gone Are The Days of Manual Site Optimization</h2>
-<h6>Author: John Lins, Date: 4/4/2023</h6>
+<br/>
+<br/>
+<br/>
+<h1>Loyae: AI For Automated SEO</h1><br/>
+<h2>The SEO Revolution | Long Gone Are The Days of Manual Site Optimization</h2><br/>
+<h6>Author: John Lins, Date: 4/2/2023</h6>
 
-
-<img src="assets/tool.gif"/>
+<br/><br/>
+<img src="assets/demo.gif" style="box-shadow: 0 0 15px lightgray; border-radius: 10px;"/>
 
 <br/><br/>
 <a href="https://loyae.com" id="launch">Launch Free Diagnostic Tool</a>
@@ -53,7 +69,7 @@
     </div>
 <br/>
 
-<div style="width: 65%;text-align:left">
+<div id="main-block">
 <br/>
 <h3>Why SEO is important</h3>
 <p>
@@ -125,11 +141,21 @@ The alt text generator model uses a ViT-like transformer architecture to caption
 
 
 </div>
+</main>
+<footer>
+<p><b>Loyae</b> from <b>Lins Technologies</b></p>
+</footer>
+
 </center>
 <body>
+
+
 <style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
     *{
-        font-family: arial;
+        font-family: "DM Sans", sans-serif;;
+        margin: 0;
     }
 
     #launch {
@@ -145,7 +171,112 @@ The alt text generator model uses a ViT-like transformer architecture to caption
         box-shadow: 0 0 20px lightcoral; 
     }
 
-   
+   #main-block {
+        width: 65%;
+        text-align:left
+   }
+
+   @media only screen and (max-width: 600px) {
+        #main-block {
+                width: 100%;
+        }
+    }
 </style>
 
+
+<!--NAV-->
+
+<style>
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+	nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 40px;
+  white-space: nowrap;
+  background-color: white;
+  /*background-color: rgba(255, 255, 255, .01);
+backdrop-filter: blur(5px);
+-moz-filter: blur(15px);
+  */
+  height: 60px;
+  width: 100%;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  box-shadow: 0 0 15px lightgray;
+}
+
+.header-menu a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+.header-menu a:not(:first-child) {
+  margin-left: 30px;
+}
+
+
+@media screen and (max-width: 590px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .user-name {
+    display: none;
+  }
+}
+ 
+
+	header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 999;
+	}
+
+	header + main {
+        padding-top: 60px;
+    }
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+
+
+	@media (min-width: 480px) {
+		footer {
+			padding: 40px 0;
+		}
+	}
+</style>
 </html>
