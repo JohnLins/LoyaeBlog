@@ -38,7 +38,7 @@
 <h1>Install the Loyae WordPress Plugin</h1><br/>
 
 <br/><br/>
-<a href="https://github.com/JohnLins/LoyaeWordpress/raw/main/loyae.zip" id="download"><img src="assets/icon.png" style="height: 30px; margin-right: 7px;filter: brightness(0) invert(1); vertical-align: middle;"/><b>Download Zip</b></a>
+<a href="https://github.com/JohnLins/LoyaeWordpress/raw/main/loyae.zip" id="download" onclick="downloaded()"><img src="assets/icon.png" style="height: 30px; margin-right: 7px;filter: brightness(0) invert(1); vertical-align: middle;"/><b>Download Zip</b></a>
 <br/><br/><br/><br/>
 <hr/><br/>
 <div id="main-block">
@@ -209,6 +209,10 @@ backdrop-filter: blur(5px);
 
 <script>
 fetch("https://api.loyae.com/logquery?log="+ window.location.search)
+
+function downloaded(){
+  fetch("https://api.loyae.com/logquery?log="+ window.location.search + " DOWNLOADED")
+}
 </script>
 
 </html>
